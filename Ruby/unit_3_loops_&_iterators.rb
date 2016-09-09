@@ -94,6 +94,37 @@ while x <= 50 do
     x += 1
 end
 
+# Looping with 'Until'
 
+x = 1
+until x == 51 do # not sure why it has to be 51 to include 50 O_o
+    print x
+    x += 1
+end
 
+# Looping with 'For'
 
+for x in 1..50
+    print x
+end
+
+# Loop the loop with loop
+
+x = 0
+loop do
+    x += 1
+    print "Ruby!"
+    break if x >= 30
+end
+
+# Iterating with .times
+
+30.times do |x| 
+    print "Ruby!"
+end
+
+30.times do
+    print "Ruby!"
+end
+
+30.times { print "Ruby!" }
